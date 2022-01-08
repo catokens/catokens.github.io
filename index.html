@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    var k = 0;
+
+    function flip() {
+        var j = document.getElementById("flip-card-inner");
+        k += 180;
+        j.style.transform = "rotatey(" + k + "deg)";
+        j.style.transitionDuration = "0.5s"
+    }
+
+    function copyText(text){
+      navigator.clipboard.writeText(text);
+      $("#popup").fadeIn( 500 ).delay( 1300 ).fadeOut( 400 );
+  }
+  </script>
+
+  <head>
+    <title>JD's Catokens</title>
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/jpg" href="./resources/images/favicon.ico"/>
+  </head>
+  <body>
+
+    <!--Header-->
+    <div class="container" id="top-header">
+      <div class="content">      
+        <h1>THE CATOKENS</h1>
+        <p>Immortalizing my cats on the blockchain</p>
+      </div>
+    </div>
+
+    <!--Tokens-->
+    <div class="container flip-card" id ="flip-card">
+      <div class ="flip-card-inner" id ="flip-card-inner">
+        <div class="content front">
+          <img src="./resources/images/gordon.png">
+          <h1>GORDON COIN - (GORD)</h1>
+
+          <p>He lives on <strong>Solana</strong> <p>
+          <p><strong>Mint: </strong> 
+              <button class ="text-button" onclick="copyText('GjCHuYuccKrjugBMmYYC17W42zNHNB7XeSxNCXZeetS4')"> GjCHuYuccKrjugBMmYYC17W42zNHNB7XeSxNCXZeetS4</button>
+          </p>  
+              <p><strong>Serum Market: </strong>
+            <button class ="text-button" onclick="copyText('5Jc75GKsRFiZEzfEsnQTSEYrwiLJfDfv4m9xNQnmDFeR')"> 5Jc75GKsRFiZEzfEsnQTSEYrwiLJfDfv4m9xNQnmDFeR</button></p>
+          <p><button class ="flipper"  onclick="flip()">Show me the other Catoken!</button></p>
+          <p class="disclaimer"> Disclaimer: this token is solely a utility token and has no instrinsic value whatsoever beyond what the market gives it
+          </p>
+        </div>
+  
+  
+        <div class="content back">
+          <img src="./resources/images/mischi.png">
+          <h1>MISCHI COIN - (MSCH)</h1>
+          <p>She lives on <strong>Ethereum</strong> <p>
+          <p><strong>Mint: </strong>
+            <button class ="text-button" onclick="copyText('0x2CAAb1cCC69f1e1A459155AAaFCF05ea14Dd99c4')"> 0x2CAAb1cCC69f1e1A459155AAaFCF05ea14Dd99c4</button></p>
+          <button class ="flipper" onclick="flip()">Show me the other Catoken!</button>
+          <p class="disclaimer"> Disclaimer: this token is solely a utility token and has no instrinsic value whatsoever beyond what the market gives it
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup-->
+    <div id="popup">
+      <h4 class="popuptext">Copied address to clipboard!</h4>
+    </div>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- Image links:
+
+background: https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg
+
+
+
+-->
