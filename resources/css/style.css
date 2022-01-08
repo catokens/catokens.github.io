@@ -43,7 +43,7 @@ p, h1{
   background-color: white;
   display: flex;
   justify-content: center;
-  width: 55%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 0.5em;
   perspective: 10000rem;
