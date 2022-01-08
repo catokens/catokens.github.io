@@ -43,7 +43,7 @@ p, h1{
   background-color: white;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 55%;
   margin: 0 auto;
   margin-top: 0.5em;
   perspective: 10000rem;
@@ -144,3 +144,39 @@ footer{
   display: none;
 }
 
+
+
+/* condition for screen size minimum of 500px */
+@media (max-width:500px) {
+
+  body{
+    font-size: 1.1rem;
+  }
+
+  img{
+    max-width: 70%;
+    height: auto;
+  }
+
+  .flipper{
+    width: 70%;
+  }
+
+  h1{
+    font-size: 6.5vmin;
+  }
+
+  p{
+    font-size: 4.5vmin;
+  }
+
+  .flipper{
+    font-size: 4vmin;
+  }
+
+
+  .container .popup{
+    width: 60%;
+  }
+  
+}
